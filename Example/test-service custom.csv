@@ -1,0 +1,5 @@
+name;protocol;tcp-portrange
+"""ALL""";IP;
+"""HTTP""";TCP/UDP/SCTP;80
+"""HTTPS""";TCP/UDP/SCTP;443
+"""SSH""";TCP/UDP/SCTP;22

@@ -1,0 +1,7 @@
+name;srcintf;dstintf;srcaddr;dstaddr;action;status;service
+1;"""any""";"""lo0""";"""addr1""";"""addr2""";accept;enable;"""HTTPS"" ""SSH"""
+2;"""out""";"""in""";"""addr1""";"""addr2""";accept;enable;"""HTTPS"" ""SSH"""
+3;"""out""";"""in""";"""addr1""";"""addr2"" ""addr3""";accept;enable;"""SSH"""
+4;"""in""";"""out""";"""addr3""";"""addr_grp1""";accept;enable;"""SSH"""
+5;"""out""";"""in""";"""all""";"""addr_grp2""";accept;disable;"""Web Access"""
+6;"""out""";"""in""";"""all""";"""all""";deny;enable;"""ALL"""

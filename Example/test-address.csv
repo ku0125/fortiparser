@@ -1,0 +1,7 @@
+name;type;fqdn;associated-interface;subnet
+"""google""";fqdn;"""*.apple.com""";;
+"""apple""";fqdn;"""*.google.com""";;
+"""addr1""";ipmask;;"""out""";192.168.1.1 255.255.255.0
+"""addr2""";ipmask;;"""in""";10.14.1.1 255.255.254.0
+"""addr3""";ipmask;;"""in""";10.14.3.1 255.255.254.0
+"""all""";ipmask;;;0.0.0.0 0.0.0.0
