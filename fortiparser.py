@@ -14,7 +14,7 @@ import csv
 input_filename = sys.argv[1]
 output_filename_base = os.path.splitext(input_filename)[0]
 
-with open(input_filename) as input:
+with open(input_filename,'r', encoding='utf-8') as input:
 	while True:
 		line = input.readline()
 		if line == "":
@@ -52,7 +52,7 @@ with open(input_filename) as input:
 					# export section
 					fn = output_filename_base+"-"+section_name+".csv"
 					print("Exporting "+fn+" -> ",end="")
-					with open(fn, "wb") as output:
+					with open(fn, "w", encoding='utf-8') as output:
 						c = csv.writer(output, delimiter=';')
 						l = ["name"]+item_param_names
 						c.writerow(l)
